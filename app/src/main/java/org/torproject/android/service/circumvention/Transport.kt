@@ -136,16 +136,12 @@ enum class Transport(val id: String) {
         result.add("UseBridges ${if (this == NONE) "0" else "1"}")
 
         for (transport in transportNames) {
+            val port = controller.port(transport)
 
-            //sometimes there is a 0 for the port, which is invalid
-            if (controller.port(transport) > 0)
-                result.add(
-                    "ClientTransportPlugin $transport socks5 127.0.0.1:${
-                        controller.port(
-                            transport
-                        )
-                    }"
-                )
+            // Sometimes port == 0, which is invalid.
+            if (port in 1..<65536) {
+                result.add("ClientTransportPlugin $transport socks5 127.0.0.1:$port")
+            }
         }
 
         when (this) {
