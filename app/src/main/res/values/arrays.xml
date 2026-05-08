@@ -4,5 +4,13 @@
         <item>HTTPS</item>
         <item>SOCKS4</item>
         <item>SOCKS5</item>
+        <item>ShadowSocks</item>
+    </array>
+
+    <array name="proxy_type_values">
+        <item>https</item>
+        <item>socks4</item>
+        <item>socks5</item>
+        <item>ss</item>
     </array>
 </resources>

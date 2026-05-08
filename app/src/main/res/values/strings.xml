@@ -29,6 +29,8 @@
     <string name="pref_proxy_username_summary">Proxy Username (Optional)</string>
     <string name="pref_proxy_password_title">Outbound Proxy Password</string>
     <string name="pref_proxy_password_summary">Proxy Password (Optional)</string>
+    <string name="pref_proxy_ss_title">ShadowSocks Configuration</string>
+    <string name="pref_proxy_ss_summary">Full ShadowSocks configuration URL beginning with "ss://"</string>
     <string name="error">Error</string>
     <string name="exit_nodes">Exit Nodes</string>
     <string name="fingerprints_nicks_countries_and_addresses_for_the_last_hop">Fingerprints, nicks, countries and addresses for the last hop</string>

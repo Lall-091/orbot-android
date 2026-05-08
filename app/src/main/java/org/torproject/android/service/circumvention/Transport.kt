@@ -5,6 +5,7 @@ import IPtProxy.IPtProxy
 import IPtProxy.OnTransportEvents
 import android.content.Context
 import android.util.Log
+import org.torproject.android.service.tor.ShadowSocks
 import org.torproject.android.util.Prefs
 
 enum class Transport(val id: String) {
@@ -178,6 +179,14 @@ enum class Transport(val id: String) {
 
                                 result.add("Socks5ProxyPassword $password")
                             }
+                        }
+
+                        "ss" -> {
+                            // Start built-in ShadowSocks client.
+                            val address = ShadowSocks.start(context, proxy.toString())
+
+                            // Set local address of ShadowSocks client as proxy.
+                            result.add("Socks5Proxy $address")
                         }
                     }
                 }
