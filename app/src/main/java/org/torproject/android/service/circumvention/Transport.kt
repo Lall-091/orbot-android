@@ -7,6 +7,7 @@ import android.content.Context
 import android.util.Log
 import org.torproject.android.service.tor.ShadowSocks
 import org.torproject.android.util.Prefs
+import java.net.URI
 
 enum class Transport(val id: String) {
 
@@ -312,11 +313,25 @@ enum class Transport(val id: String) {
             else -> Unit
         }
 
-        val pair = Prefs.outboundProxy
-        val proxy: String? = if (pair.first == null) null else pair.first.toString()
+        var proxy = Prefs.outboundProxy.first
 
         for (transport in transportNames) {
-            controller.start(transport, if (transport == IPtProxy.Snowflake) null else proxy)
+            when (transport) {
+                IPtProxy.Snowflake, IPtProxy.Dnstt -> {
+                    controller.start(transport, null)
+                }
+                else -> {
+                    // Still need to start ShadowSocks and get the right proxy config.
+                    if (proxy?.scheme == "ss") {
+                        val address = ShadowSocks.start(context, proxy.toString())
+
+                        // Since we rewrite `proxy` from `ss://` to `socks5://`, this won't be called again.
+                        proxy = URI("socks5://$address")
+                    }
+
+                    controller.start(transport, proxy.toString())
+                }
+            }
         }
     }
 
