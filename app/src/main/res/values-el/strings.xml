@@ -45,9 +45,9 @@
     <string name="enter_exclude_nodes">Εισάγετε Εξαιρετέους κόμβους</string>
     <string name="strict_nodes">Αποκλειστικοί κόμβοι</string>
     <string name="reachable_addresses">Προσιτές διευθύνσεις</string>
-    <string name="run_as_a_client_behind_a_firewall_with_restrictive_policies">Εκτέλεση ως πελάτη πίσω από τοίχος προστασίας με περιοριστικές πολιτικές</string>
+    <string name="run_as_a_client_behind_a_firewall_with_restrictive_policies">Εκτέλεση ως πελάτη πίσω από τείχος προστασίας με περιοριστικές πολιτικές</string>
     <string name="reachable_ports">Προσιτές θύρες</string>
-    <string name="ports_reachable_behind_a_restrictive_firewall">Προσιτές θύρες πίσω από περιοριστικό τοίχος προστασίας</string>
+    <string name="ports_reachable_behind_a_restrictive_firewall">Θύρες προσβάσιμες πίσω από ένα αυστηρό τείχος προστασίας</string>
     <string name="enter_ports">Εισάγετε θύρες</string>
     <string name="enable_debug_log_to_output_must_use_adb_or_alogcat_to_view_">ενεργοποίηση καταγραφών αποσφαλμάτωσης (για την προβολή τους απαιτείται χρήση adb ή aLogCat)</string>
     <string name="project_home">Έργο Home:</string>
