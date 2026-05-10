@@ -85,6 +85,11 @@ class SettingsPreferenceFragment : AbstractPreferenceFragment(), OnPreferenceCha
             InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
         )
 
+        bindInputType(
+            listOf("pref_proxy_ss"),
+            InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_URI
+        )
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // if defined in XML, disable the persistent notification preference on Oreo+
             findPreference<Preference>("pref_persistent_notifications")?.let {
@@ -125,8 +130,7 @@ class SettingsPreferenceFragment : AbstractPreferenceFragment(), OnPreferenceCha
         if (newValue == "ss") {
             common.forEach { it.isVisible = false }
             ssConfig?.isVisible = true
-        }
-        else {
+        } else {
             common.forEach { it.isVisible = true }
             ssConfig?.isVisible = false
         }
