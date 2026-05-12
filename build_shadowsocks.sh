@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # We can't use rust-android-gradle to build shadowsocks-rust, since it uses functionality that
 # breaks with gradle 9. Rust binaries for shadowsocks can be built via shadowsocks-android which
