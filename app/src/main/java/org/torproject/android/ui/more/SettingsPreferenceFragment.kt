@@ -127,12 +127,19 @@ class SettingsPreferenceFragment : AbstractPreferenceFragment(), OnPreferenceCha
 
         val ssConfig = findPreference<EditTextPreference>("pref_proxy_ss")
 
-        if (newValue == "ss") {
-            common.forEach { it.isVisible = false }
-            ssConfig?.isVisible = true
-        } else {
-            common.forEach { it.isVisible = true }
-            ssConfig?.isVisible = false
+        when (newValue) {
+            "" -> {
+                common.forEach { it.isVisible = false }
+                ssConfig?.isVisible = false
+            }
+            "ss" -> {
+                common.forEach { it.isVisible = false }
+                ssConfig?.isVisible = true
+            }
+            else -> {
+                common.forEach { it.isVisible = true }
+                ssConfig?.isVisible = false
+            }
         }
 
         return true
