@@ -18,7 +18,7 @@
     <string name="pref_allow_background_starts_summary">Приложенията да могат да искат от Orbot да стартира Тор и услуги на Тор</string>
     <string name="pref_proxy_title">Сървър на мрежов посредник на изходящата мрежа (по избор)</string>
     <string name="pref_proxy_type_title">Вид изходящ сървър за прокси</string>
-    <string name="pref_proxy_type_summary">Протокол на сървъра за прокси: HTTPS, SOCKS4, SOCKS5</string>
+    <string name="pref_proxy_type_summary">Протокол на сървъра за прокси</string>
     <string name="pref_proxy_host_title">Хост на изходящия сървър за прокси</string>
     <string name="pref_proxy_host_summary">Име на хоста на сървъра за прокси</string>
     <string name="pref_proxy_port_title">Порт на изходящия сървър за прокси</string>

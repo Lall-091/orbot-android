@@ -27,7 +27,7 @@
     <string name="pref_allow_background_starts_summary">Να επιτρέπεται σε οποιαδήποτε εφαρμογή να πει στο Orbot να ξεκινήσει τον Tor και σχετικές υπηρεσίες</string>
     <string name="pref_proxy_title">Διακομιστής μεσολάβησης εξερχομένου δικτύου (προαιρετικό)</string>
     <string name="pref_proxy_type_title">Τύπος διακομιστή μεσολάβησης εξόδου</string>
-    <string name="pref_proxy_type_summary">Πρωτόκολλο διακομιστή μεσολάβησης: HTTPS, SOCKS4, SOCKS5</string>
+    <string name="pref_proxy_type_summary">Πρωτόκολλο διακομιστή μεσολάβησης</string>
     <string name="pref_proxy_host_title">Διακομιστής μεσολάβησης εξόδου</string>
     <string name="pref_proxy_host_summary">Όνομα Διακομιστή Μεσολάβησης</string>
     <string name="pref_proxy_port_title">Θύρα εξόδου διακομιστή μεσολάβησης</string>
