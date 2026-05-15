@@ -295,4 +295,7 @@
     <string name="battery_optimizations_are_enabled">ஆர்போட்டிற்கான பேட்டரி மேம்படுத்தல்கள் தற்போது செயலில் உள்ளன. இது இயல்புநிலை மற்றும் பெரும்பாலான பயனர்களுக்கு நியாயமானது…</string>
     <string name="btn_connect_anyway">எப்படியும் இணைக்கவும்</string>
     <string name="btn_connect_anyway_stop_showing">இந்த எச்சரிக்கையை இணைத்து அணைக்கவும்</string>
+    <string name="pref_proxy_no_proxy">பதிலி இல்லை</string>
+    <string name="pref_proxy_ss_title">நிழல்காலுறைகள் கட்டமைப்பு முகவரி</string>
+    <string name="pref_proxy_ss_summary">ss:// உடன் தொடங்கும் முழு நிழல்காலுறைகள் கட்டமைப்பு முகவரி</string>
 </resources>
